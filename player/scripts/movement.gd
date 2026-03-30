@@ -1,5 +1,11 @@
 extends CharacterBody2D
 
+<<<<<<< HEAD
+=======
+signal current_speed(speed);
+
+var speed = 2;
+>>>>>>> f2ca2987c1d87ab251730ee03f2a2cb004c8f2d1
 var gravity_direction = 1;
 var gravity_speed = Vector2.DOWN * 1;
 var charged_speed = Vector2.DOWN * 1;
@@ -25,6 +31,13 @@ func get_input():
 func _physics_process(delta):
 	get_input()
 	var gravity_vec = gravity_speed * gravity_direction;
+<<<<<<< HEAD
 	velocity = Vector2.RIGHT * HOR_SPEED_MULTIPLYER + gravity_vec * VER_SPEED_MULTIPIER;
 	
 	move_and_slide();
+=======
+	velocity = velocity.move_toward(Vector2.RIGHT, speed) + gravity_vec;
+	current_speed.emit(velocity);
+
+	move_and_collide(velocity)
+>>>>>>> f2ca2987c1d87ab251730ee03f2a2cb004c8f2d1
