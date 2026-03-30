@@ -26,6 +26,7 @@ shape = SubResource("RectangleShape2D_kne1u")
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=450292970]
 position = Vector2(75, 73)
 scale = Vector2(1.0040319, 1.0355535)
+zoom = Vector2(0.4, 0.4)
 limit_top = 0
 limit_bottom = 0
 
@@ -52,5 +53,3 @@ text = "bruh"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 1
-
-[connection signal="current_speed" from="CharacterBody2D" to="CharacterBody2D/Camera2D/CanvasLayer" method="_on_character_body_2d_current_speed"]
