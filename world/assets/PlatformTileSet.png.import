@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6tfye8lcpwai"
-path="res://.godot/imported/PlatformTileMap.png-38b3cc7cdc12288f08edb942a27704fc.ctex"
+uid="uid://b66kb2exn5smy"
+path="res://.godot/imported/PlatformTileSet.png-d95453e7ba24b5eea8ef161ebbc3fe6a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://world/assets/PlatformTileMap.png"
-dest_files=["res://.godot/imported/PlatformTileMap.png-38b3cc7cdc12288f08edb942a27704fc.ctex"]
+source_file="res://world/assets/PlatformTileSet.png"
+dest_files=["res://.godot/imported/PlatformTileSet.png-d95453e7ba24b5eea8ef161ebbc3fe6a.ctex"]
 
 [params]
 
