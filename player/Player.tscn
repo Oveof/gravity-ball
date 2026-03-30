@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://d0y6eu4ah06qo" path="res://player/scripts/movement.gd" id="1_kpjcp"]
 [ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_xhfnw"]
 [ext_resource type="Script" uid="uid://bh76u7nsl22el" path="res://player/scripts/hud.gd" id="3_wnvi2"]
+[ext_resource type="Script" uid="uid://bdgbnovkwgwvj" path="res://player/scripts/score.gd" id="4_83hs8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kne1u"]
 size = Vector2(133, 132)
@@ -44,12 +45,22 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Gravity" type="Label" parent="CharacterBody2D/Camera2D/CanvasLayer" unique_id=1067896138]
-offset_left = 1018.00006
-offset_top = 522.0
-offset_right = 1058.0
-offset_bottom = 545.0
-scale = Vector2(2.582796, 2.6774426)
+offset_left = 1014.00006
+offset_top = 536.00006
+offset_right = 1129.9368
+offset_bottom = 611.76685
+scale = Vector2(0.86253923, 0.9898799)
 text = "bruh"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 1
+
+[node name="Score" type="Label" parent="CharacterBody2D/Camera2D/CanvasLayer" unique_id=471018151]
+offset_left = -6.0
+offset_top = 592.0
+offset_right = 134.0
+offset_bottom = 620.0
+text = "Score: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_83hs8")
