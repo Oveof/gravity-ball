@@ -12,7 +12,7 @@ func _process(delta: float) -> void:
 	var speed = get_parent().get_parent().speed;
 	var gravity = get_parent().get_parent().gravity_speed;
 	$Speed.text = str(speed) + " m/s";
-	$Gravity.text = str(snapped(gravity[1], 0.1)) + " m/s";
+	$Gravity.text = str(snapped(gravity, 0.1)) + " m/s";
 	# get_child(0).text = "test";
 	# $Label.text = "test";
 
