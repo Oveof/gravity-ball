@@ -1,12 +1,13 @@
 extends CharacterBody2D
 
-var speed = 2;
 var gravity_direction = 1;
 var gravity_speed = Vector2.DOWN * 1;
 var charged_speed = Vector2.DOWN * 1;
 
 const BASE_GRAVITY_VECTOR = Vector2.DOWN * 1;
-const GRAVITY_MULTIPLIER = 0.02
+const GRAVITY_MULTIPLIER = 0.02;
+const HOR_SPEED_MULTIPLYER = 400;
+const VER_SPEED_MULTIPIER = 400;
 
 func get_input():
 	if Input.is_action_just_pressed("activate_gravity"):
@@ -24,5 +25,6 @@ func get_input():
 func _physics_process(delta):
 	get_input()
 	var gravity_vec = gravity_speed * gravity_direction;
-	velocity = velocity.move_toward(Vector2.RIGHT, speed) + gravity_vec;
-	move_and_collide(velocity)
+	velocity = Vector2.RIGHT * HOR_SPEED_MULTIPLYER + gravity_vec * VER_SPEED_MULTIPIER;
+	
+	move_and_slide();
