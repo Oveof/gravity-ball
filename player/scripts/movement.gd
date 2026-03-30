@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+signal current_speed(speed);
+
 var speed = 2;
 var gravity_direction = 1;
 var gravity_speed = Vector2.DOWN * 1;
@@ -25,4 +27,6 @@ func _physics_process(delta):
 	get_input()
 	var gravity_vec = gravity_speed * gravity_direction;
 	velocity = velocity.move_toward(Vector2.RIGHT, speed) + gravity_vec;
+	current_speed.emit(velocity);
+
 	move_and_collide(velocity)
