@@ -25,6 +25,9 @@ shape = SubResource("RectangleShape2D_kne1u")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=450292970]
 position = Vector2(75, 73)
+scale = Vector2(1.0040319, 1.0355535)
+limit_top = 0
+limit_bottom = 0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="CharacterBody2D/Camera2D" unique_id=573082532]
 script = ExtResource("3_wnvi2")
